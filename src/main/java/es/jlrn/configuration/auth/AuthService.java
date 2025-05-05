@@ -28,7 +28,7 @@ public class AuthService {
     private final JwtService jwtService;
 
     //
-
+    // Método para autenticar al usuario y generar el token JWT
     public String login(LoginRequestDTO request) {
     //    
         UserEntity user = userRepository.findByUsername(request.getUsername())
